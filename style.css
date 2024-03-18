@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    transition: 0.3s all ease;
+}
+
+:root {
+    --main_color: #fabd16;
+    --hover_color: #aca24c;
+    --content_font: 1.05rem;
+}
+
+
+.scale:hover {
+    box-shadow: 8px 4px 15px var(--main_color);
+    scale: calc(1.04);
+    transition: all 0.3s ease;
+}
+
+.cursor:hover {
+    cursor: pointer;
+}
+
+.button {
+    width: fit-content;
+    height: 44px;
+    margin: 8px 2px;
+    padding: 6px 15px;
+    background-color: var(--main_color);
+    border: 2px solid var(--main_color);
+    border-radius: 5px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.button a {
+    color: white;
+}
+
+.button:hover {
+    border: 2px solid var(--hover_color);
+    background-color: white;
+}
+
+.button:hover a {
+    color: var(--hover_color);
+}
+
+.primary-heading {
+    width: 250px;
+    height: 40px;
+    color: #0E2431;
+    text-align: center;
+    padding: 0px 0px 5px 13px;
+    font-size: 1.68rem;
+    font-weight: 600;
+    margin-top: 75px;
+    font-family: sans-serif;
+    border-bottom: 3px solid var(--main_color);
+}
+
+.secondry-top {
+    width: fit-content;
+    text-align: center;
+    font-size: 1.62rem;
+    font-family: sans-serif;
+    font-weight: 500;
+    padding: 30px 0px 20px;
+}
+
+.navbar-section {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    z-index: 50;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(253, 244, 226);
+}
+
+.navbar {
+    width: 95%;
+    height: 70px;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.navbar-logo {
+    font-weight: 500;
+    font-size: 2.1rem;
+    color: var(--main_color);
+}
+
+.navbar-middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.navbar-middle li {
+    margin: 0px 8px;
+}
+
+.navbar-middle li a {
+    font-size: 1.08rem;
+    font-weight: 500;
+    color: #0E2431;
+    padding: 6px 0;
+
+}
+
+.navbar-middle li a:hover {
+    color: var(--main_color);
+
+}
+
+.ri-mail-send-fill {
+    color: var(--main_color);
+    font-size: 22px;
+    margin: 11px 3px;
+}
+
+.ri-github-fill {
+    color: var(--main_color);
+    font-size: 24px;
+    margin: 11px 3px;
+}
+
+.ri-whatsapp-line {
+    color: var(--main_color);
+    font-size: 23px;
+    margin: 11px 3px;
+}
+
+.hide_link_large {
+    display: none;
+}
+
+#menubar-icon {
+    display: none;
+    font-size: 23px;
+    padding-left: 15px;
+    color: var(--main_color);
+}
+
+#menu_cross_btn {
+    display: none;
+    font-size: 23px;
+    padding-left: 15px;
+    color: var(--main_color);
+}
+
+.home {
+    display: flex;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Ubuntu', sans-serif;
+    /* background-color: #ffffff; */
+    /* background-color: green; */
+}
+
+.home-left {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-basis: 70%;
+    height: 100%;
+    margin-top: 83px;
+    background-color: transparent;
+
+}
+
+.home-content-text {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 90%;
+    height: 700px;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px 0px 0px 100px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.text-one {
+    font-size: 1.8rem;
+    font-weight: 200;
+}
+
+.text-two {
+    font-size: 4.6rem;
+    font-weight: 500;
+}
+
+.text-three {
+    font-size: 2.8rem;
+    font-weight: 400;
+    padding-top: 5px;
+    color: var(--main_color);
+}
+
+.text-four {
+    font-size: 1.56rem;
+    font-weight: 300;
+    padding: 5px 3px;
+}
+
+.home-right {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 70%;
+    width: fit-content;
+    align-items: flex-end;
+    justify-content: flex-start;
+    z-index: 5;
+
+}
+
+.home-right img {
+    width: 680px;
+    height: auto;
+    margin-bottom: -30px;
+}
+
+
+.udemy-business-instructor-section {
+    height: 1020px;
+    width: 100%;
+}
+
+.udemy-business-instructor-container {
+    width: 1340px;
+    height: 950px;
+    margin: 0px 280px;
+    padding: 80px 0px 0px;
+}
+
+.udemy-business-box {
+    display: flex;
+    width: 900px;
+    height: 400px;
+    margin: 0px 225px 50px;
+}
+
+.udemy-business-intro {
+    width: 50%;
+}
+
+.udemy-business-intro img {
+    height: 80px;
+    width: 220px;
+    margin: 15px 0px 0px;
+}
+
+.udemy-business-intro ul {
+    padding: 0px 20px;
+}
+
+.udemy-business-intro ul li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    color: #1c1d1f;
+    padding: 7px 0px;
+}
+
+.udemy-business-image {
+    width: 50%;
+}
+
+.udemy-business-image img {
+    height: 400px;
+    width: 400px;
+}
+
+.udemy-business-intro-heading {
+    font-size: 36px;
+    font-weight: 600;
+    padding: 10px 20px 5px 0px;
+}
+
+.udemy-business-button {
+    display: flex;
+}
+
+.business-button1 {
+    display: flex;
+    height: 48px;
+    width: 178px;
+    margin: 18px 0px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main_color);
+}
+
+.business-button1 a {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+.business-button2 {
+    height: 48px;
+    width: 110px;
+    border: 1.5px solid var(--main_color);
+    margin: 18px 10px;
+    padding: 15px 10px;
+}
+
+.business-button2 a {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: var(--main_color);
+}
+
+.instructor-button {
+    width: 178px;
+    height: 50px;
+    padding: 15px 10px;
+    background-color: var(--main_color);
+}
+
+.instructor-button a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+}
+
+.udemy-instructor-middle {
+    color: #1c1d1f;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    padding: 10px 55px 30px 0px;
+}
+
+.instructor-heading {
+    padding: 90px 0px 10px;
+}
+
+.about-section {
+    display: flex;
+    width: 100%;
+    height:fit-content;
+    padding-bottom: 100px;
+    justify-content: center;
+    background-color:rgb(142, 235, 238);
+}
+
+.about_child {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.movie-section {
+    width: 100%;
+    height: 560px;
+    background-color: rgb(203, 240, 252);
+    padding-top: 3px;
+}
+
+/*  rgb(203, 240, 252) */
+.movie-card {
+    width: 1550px;
+    height: 550px;
+    border: 1.5px solid lightgray;
+    margin: 0px 175px;
+    padding-top: 15px;
+    background-color: white;
+
+}
+
+.movie-card div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie-heading {
+    font-size: 23px;
+    font-weight: 600;
+    margin-left: 27px;
+}
+
+.movie-card div img {
+    margin-top: 5px;
+    margin: 10px 26px;
+    height: 430px;
+    width: 720px;
+}
+
+.movie-description {
+    font-size: 15px;
+    font-weight: 550;
+    margin: 10px 30px;
+    color: #007185;
+}
+
+.movie-card div img {
+    cursor: pointer;
+}
+
+.movie-description:hover {
+    cursor: pointer;
+    color: #025766;
+}
+
+
+.footer-container {
+    display: flex;
+    width: 100%;
+    height: 275px;
+    justify-content: center;
+    background-color:var(--main_color);
+
+}
+
+.footer-box {
+    height: 275px;
+    width: 1800px;
+    margin: 5px 0px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-top-left {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 205px;
+    padding: 20px;
+}
+
+.footer-top div ul {
+    width: 256px;
+    height: 180px;
+    margin: 0px 10px;
+}
+
+.footer-top div ul li {
+    list-style: none;
+    padding: 6px;
+}
+
+.footer-top div ul li a {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
